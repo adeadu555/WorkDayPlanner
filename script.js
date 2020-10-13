@@ -1,6 +1,6 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do"))
 
-var scheduleHours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+var scheduleHours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
 var currentHour = moment().hour()
 
 //To iterate through the schedulehours, use for loop//
@@ -30,56 +30,49 @@ $(".btn-success").on("click", function(){
 
 $(".btn-success").on("click", function(){
     var valueOfTen = $("#textAreaTen").val();
-    console.log(valueOfTen);
+    
     localStorage.setItem("10 AM", JSON.stringify(valueOfTen));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfEleven = $("#textAreaEleven").val();
-    console.log(valueOfEleven);
+    
     localStorage.setItem("11 AM", JSON.stringify(valueOfEleven));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfTwelve = $("#textAreaTwelve").val();
-    console.log(valueOfTwelve);
     localStorage.setItem("12 PM", JSON.stringify(valueOfTwelve));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfThirteen = $("#textAreaThirteen").val();
-    console.log(valueOfThirteen);
     localStorage.setItem("1 PM", JSON.stringify(valueOfThirteen));
 });
 
 $(".btn-success").on("click", function(){
-    var valueOfFourteen = $("#textAreaFourteen").val();
-    console.log(valueOfFourteen);
+    var valueOfFourteen = $("#textAreaFourteen").val(); 
     localStorage.setItem("2 PM", JSON.stringify(valueOfFourteen));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfFifteen = $("#textAreaFifteen").val();
-    console.log(valueOfFifteen);
     localStorage.setItem("3 PM", JSON.stringify(valueOfFifteen));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfSixteen = $("#textAreaSixteen").val();
-    console.log(valueOfSixteen);
     localStorage.setItem("4 PM", JSON.stringify(valueOfSixteen));
 });
 
 
 $(".btn-success").on("click", function(){
     var valueOfSeventeen = $("#textAreaSeventeen").val();
-    console.log(valueOfSeventeen);
     localStorage.setItem("5 PM", JSON.stringify(valueOfSeventeen));
 });
 
 $(".btn-success").on("click", function(){
     var valueOfEighteen = $("#textAreaEighteen").val();
-    console.log(valueOfEighteen);
     localStorage.setItem("6 PM", JSON.stringify(valueOfEighteen));
 });
 
